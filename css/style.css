@@ -628,7 +628,7 @@ h1, h2, h3, h4, h5 {
 
 .villa-card__image {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   background: linear-gradient(135deg, #5C8A6E, #3D6B4F);
 }
@@ -1031,7 +1031,7 @@ h1, h2, h3, h4, h5 {
   }
 
   .villa-card__image {
-    height: 300px;
+    aspect-ratio: 16 / 9;
   }
 
   .stat__number {
