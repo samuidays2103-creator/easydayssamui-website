@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://samuidays2103-creator.github.io/easydayssamui-website/</loc>
+    <loc>https://easydayssamui.com/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://samuidays2103-creator.github.io/easydayssamui-website/kindergarten.html</loc>
+    <loc>https://easydayssamui.com/kindergarten.html</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samuidays2103-creator.github.io/easydayssamui-website/russian-school.html</loc>
+    <loc>https://easydayssamui.com/russian-school.html</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samuidays2103-creator.github.io/easydayssamui-website/international-school.html</loc>
+    <loc>https://easydayssamui.com/international-school.html</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samuidays2103-creator.github.io/easydayssamui-website/villas.html</loc>
+    <loc>https://easydayssamui.com/villas.html</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://easydayssamui.com/invest.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
