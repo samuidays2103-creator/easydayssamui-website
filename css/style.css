@@ -259,6 +259,7 @@ h1, h2, h3, h4, h5 {
   gap: 0.25rem;
   overflow-y: auto;
   animation: slideDown 0.3s ease;
+  z-index: 999;
 }
 
 @keyframes slideDown {
