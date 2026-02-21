@@ -246,20 +246,28 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 
+/* Menu open: header becomes full-screen (fixes Safari backdrop-filter bug) */
+.header--menu-open {
+  height: 100vh;
+  height: 100dvh;
+  background: var(--color-bg);
+  overflow-y: auto;
+}
+
+.header--menu-open .header__inner {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: auto;
+}
+
 .nav--open {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: var(--header-height);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--color-bg);
-  padding: 1.5rem;
-  gap: 0.25rem;
-  overflow-y: auto;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem 0;
   animation: slideDown 0.3s ease;
-  z-index: 999;
 }
 
 @keyframes slideDown {

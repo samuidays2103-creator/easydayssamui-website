@@ -25,33 +25,35 @@ function initHeader() {
 function initMobileNav() {
   const btn = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
-  if (!btn || !nav) return;
+  const header = document.querySelector('.header');
+  if (!btn || !nav || !header) return;
+
+  function closeMenu() {
+    nav.classList.remove('nav--open');
+    btn.classList.remove('hamburger--open');
+    header.classList.remove('header--menu-open');
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
 
   btn.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('nav--open');
     btn.classList.toggle('hamburger--open', isOpen);
+    header.classList.toggle('header--menu-open', isOpen);
     btn.setAttribute('aria-expanded', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
   // Close on link click
   nav.querySelectorAll('.nav__link').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('nav--open');
-      btn.classList.remove('hamburger--open');
-      btn.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMenu);
   });
 
   // Close on outside click
   document.addEventListener('click', (e) => {
     if (nav.classList.contains('nav--open') &&
         !nav.contains(e.target) && !btn.contains(e.target)) {
-      nav.classList.remove('nav--open');
-      btn.classList.remove('hamburger--open');
-      btn.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
+      closeMenu();
     }
   });
 }
