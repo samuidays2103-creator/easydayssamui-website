@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting… — Easy Days Samui</title>
+  <script>
+    var redirects = {
+      '/russian_school': '/russian-school.html',
+      '/internationalkindergarten': '/kindergarten.html',
+      '/international_school': '/international-school.html',
+      '/villas': '/villas.html',
+      '/invest': '/invest.html'
+    };
+    var path = window.location.pathname.replace(/\/+$/, '').toLowerCase();
+    if (redirects[path]) {
+      window.location.replace(redirects[path]);
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #FFFAF4; color: #3D3027; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 1rem; }
+    h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 0.5rem; }
+    p { color: #7A6B5D; margin-bottom: 1.5rem; }
+    a { color: #D4842A; font-weight: 600; text-decoration: none; }
+    a:hover { color: #B06F1E; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Page Not Found</h1>
+    <p>Sorry, this page doesn't exist.</p>
+    <a href="/">← Back to Home</a>
+  </div>
+</body>
+</html>
