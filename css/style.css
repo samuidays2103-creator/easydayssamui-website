@@ -260,6 +260,10 @@ h1, h2, h3, h4, h5 {
   height: auto;
 }
 
+.header--menu-open .header__actions {
+  order: 0;
+}
+
 .nav--open {
   display: flex;
   flex-direction: column;
@@ -267,6 +271,7 @@ h1, h2, h3, h4, h5 {
   gap: 0.25rem;
   width: 100%;
   padding: 1rem 0;
+  order: 1;
   animation: slideDown 0.3s ease;
 }
 
