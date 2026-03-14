@@ -106,6 +106,14 @@ h1, h2, h3, h4, h5 {
   color: var(--color-white);
 }
 
+.section + .section {
+  padding-top: 1rem;
+}
+
+.section--alt + .section--alt {
+  padding-top: 0;
+}
+
 .text-center { text-align: center; }
 
 .section-title {
@@ -474,6 +482,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
   background: linear-gradient(135deg, var(--color-bg-alt), var(--color-border));
 }
 
