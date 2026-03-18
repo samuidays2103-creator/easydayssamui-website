@@ -23,7 +23,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Critical CSS: above-the-fold styles inlined for faster FCP/LCP -->
+  <style>:root{--color-primary:#d4842a;--color-primary-light:#f0a84d;--color-primary-dark:#b06f1e;--color-secondary:#2b4c3f;--color-accent:#ffb62e;--color-bg:#fffaf4;--color-bg-alt:#fff3e4;--color-bg-dark:#3d3027;--color-text:#3d3027;--color-text-light:#7a6b5d;--color-white:#fff;--color-border:#e8ddd0;--font-heading:'Playfair Display',Georgia,'Times New Roman',serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--shadow-sm:0 2px 8px rgba(61,48,39,0.08);--shadow-md:0 4px 20px rgba(61,48,39,0.12);--radius-sm:8px;--radius-md:16px;--radius-lg:24px;--radius-full:9999px;--transition:.3s ease;--container-max:1200px;--header-height:72px}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{font-family:var(--font-body);font-size:1rem;line-height:1.6;color:var(--color-text);background-color:var(--color-bg);overflow-x:hidden}img{max-width:100%;height:auto;display:block}a{color:var(--color-primary);text-decoration:none;transition:color var(--transition)}h1,h2,h3,h4,h5{font-family:var(--font-heading);font-weight:700;line-height:1.2;color:var(--color-text)}.container{width:100%;max-width:var(--container-max);margin:0 auto;padding:0 1rem}.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,250,244,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);height:var(--header-height);transition:box-shadow var(--transition)}.header__inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--container-max);margin:0 auto;padding:0 1rem}.header__logo{display:flex;align-items:center;gap:.5rem;font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--color-text)}.header__logo img{height:52px;width:auto}.nav{display:none}.header__actions{display:flex;align-items:center;gap:.5rem}.lang-switch{display:flex;background:var(--color-bg-alt);border-radius:var(--radius-full);padding:3px;border:1px solid var(--color-border)}.lang-switch__btn{padding:.25rem .6rem;border:0;background:transparent;font-size:.8rem;font-weight:600;color:var(--color-text-light);cursor:pointer;border-radius:var(--radius-full);transition:all var(--transition);font-family:var(--font-body)}.lang-switch__btn--active{background:var(--color-primary);color:var(--color-white)}.hamburger{display:flex;flex-direction:column;gap:5px;background:0;border:0;cursor:pointer;padding:6px;z-index:10}.hamburger__line{width:24px;height:2.5px;background:var(--color-text);border-radius:2px;transition:all var(--transition)}.hero{position:relative;min-height:85vh;display:flex;align-items:center;padding-top:var(--header-height);overflow:hidden}.hero--short{min-height:50vh}.hero__bg{position:absolute;inset:0;z-index:0}.hero__bg img{width:100%;height:100%;object-fit:cover}.hero__overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(61,48,39,0.7) 0,rgba(43,76,63,0.5) 100%);z-index:1}.hero__content{position:relative;z-index:2;padding:3rem 1rem;max-width:var(--container-max);margin:0 auto;width:100%;color:var(--color-white)}.hero__badge{display:inline-block;background:rgba(255,182,46,0.2);border:1px solid rgba(255,182,46,0.4);color:var(--color-accent);padding:.3rem 1rem;border-radius:var(--radius-full);font-size:.85rem;font-weight:600;margin-bottom:1.25rem;letter-spacing:.02em}.hero__title{font-size:2.25rem;color:var(--color-white);margin-bottom:1rem;max-width:600px}.hero__text{font-size:1.05rem;opacity:.9;margin-bottom:2rem;max-width:520px;line-height:1.7}.hero__buttons{display:flex;flex-wrap:wrap;gap:.75rem}.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.75rem;border-radius:var(--radius-full);font-family:var(--font-body);font-size:.95rem;font-weight:600;border:0;cursor:pointer;transition:all var(--transition);text-decoration:none;line-height:1.4}.btn--whatsapp{background:#25d366;color:var(--color-white)}.btn--white{background:var(--color-white);color:var(--color-primary)}.skip-link{position:absolute;top:-100%;left:0;background:var(--color-primary);color:white;padding:.5rem 1rem;z-index:9999}.skip-link:focus{top:0}.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.fade-in--visible{opacity:1;transform:translateY(0)}.breadcrumb{padding:12px 0;font-size:.813rem;color:var(--color-text-light);background:var(--color-bg-alt);border-bottom:1px solid rgba(0,0,0,0.06)}.breadcrumb a{color:var(--color-primary)}.breadcrumb__sep{margin:0 6px;opacity:.4}@media(min-width:480px){.hero__title{font-size:2.5rem}}@media(min-width:768px){.container{padding:0 2rem}.hero__title{font-size:3rem}.hero__text{font-size:1.15rem}}@media(min-width:1024px){.nav{display:flex;align-items:center;gap:.25rem}.nav__link{display:block;padding:.4rem .75rem;color:var(--color-text);font-weight:500;font-size:.9rem;border-radius:var(--radius-sm);transition:all var(--transition)}.nav__link:hover,.nav__link--active{color:var(--color-primary);background:var(--color-bg-alt)}.hamburger{display:none}.header__inner{padding:0 2rem}.hero__title{font-size:3.25rem}.hero__content{padding:4rem 2rem}}@media(min-width:1440px){:root{--container-max:1320px}.hero__title{font-size:3.75rem}.hero__text{font-size:1.2rem}}</style>
+  <!-- Preload hero image for faster LCP -->
+  <link rel="preload" as="image" type="image/webp" href="images/villa-5bed.webp">
+  <!-- Load full CSS asynchronously -->
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -108,7 +114,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
+        <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
       </a>
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="index.html" class="nav__link" data-en="Home" data-ru="Главная">Home</a>
@@ -133,7 +139,7 @@
   </header>
 
   <section class="hero hero--short">
-    <div class="hero__bg"><picture><source srcset="images/villa-5bed.webp" type="image/webp"><img loading="lazy" src="images/villa-5bed.jpg" alt="5-bedroom villa ED Villas Samui"></picture></div>
+    <div class="hero__bg"><picture><source srcset="images/villa-5bed.webp" type="image/webp"><img fetchpriority="high" src="images/villa-5bed.jpg" alt="5-bedroom villa ED Villas Samui"></picture></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <span class="hero__badge" data-en="ED Villas on Samui" data-ru="Посёлок вилл ED на Самуи">ED Villas on Samui</span>
@@ -370,6 +376,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
     <img src="" alt="Gallery image">
   </div>
-  <script src="js/main.min.js"></script>
+  <script defer src="js/main.min.js"></script>
 </body>
 </html>
