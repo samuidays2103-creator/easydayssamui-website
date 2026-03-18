@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,6 +65,10 @@
     "hasMap": "https://maps.app.goo.gl/sgLM5Af1nsCKZ47h6"
   }
   </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Easy Days Samui — Kindergarten, Schools & Villas on Koh Samui">
+  <meta name="twitter:description" content="International kindergarten, Russian & international schools, and premium villas on Koh Samui since 2013.">
+  <meta name="twitter:image" content="https://easydayssamui.com/images/hero-main.png">
 </head>
 <body>
 
@@ -75,7 +79,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="images/logo.png" alt="Easy Days Samui" width="40" height="52">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
       </a>
 
       <nav class="nav" id="nav" aria-label="Main navigation">
@@ -103,7 +107,7 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero">
-    <div class="hero__bg"><img src="images/hero-main.png" alt="Easy Days Samui — education and family living on Koh Samui"></div>
+    <div class="hero__bg"><picture><source srcset="images/hero-main.webp" type="image/webp"><img loading="lazy" src="images/hero-main.png" alt="Easy Days Samui — education and family living on Koh Samui"></picture></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <span class="hero__badge" data-en="Since 2013 on Koh Samui" data-ru="С 2013 года на Ко&nbsp;Самуи">Since 2013 on Koh Samui</span>
@@ -170,7 +174,7 @@
         <div class="cards fade-in">
           <!-- Kindergarten -->
           <div class="card">
-            <img class="card__image" src="images/kindergarten-card.jpg" alt="Easy Days Kindergarten">
+            <img class="card__image" src="images/kindergarten-card.jpg" alt="International kindergarten Easy Days Samui">
             <div class="card__body">
               <span class="card__tag" data-en="Ages 1.5–7" data-ru="Возраст 1.5–7">Ages 1.5–7</span>
               <h3 class="card__title" data-en="International Kindergarten" data-ru="Интернациональный детский сад «Easy Days»">International Kindergarten</h3>
@@ -181,7 +185,7 @@
 
           <!-- Russian School -->
           <div class="card">
-            <img class="card__image" src="images/russian-school-card.jpg" alt="Russian Program School">
+            <picture><source srcset="images/russian-school-card.webp" type="image/webp"><img loading="lazy" class="card__image" src="images/russian-school-card.jpg" alt="Russian program school Easy Days Samui"></picture>
             <div class="card__body">
               <span class="card__tag" data-en="Grades 1–8" data-ru="Классы 1–8">Grades 1–8</span>
               <h3 class="card__title" data-en="Russian Program School" data-ru="Школа по программе российской школы">Russian Program School</h3>
@@ -192,7 +196,7 @@
 
           <!-- International School -->
           <div class="card">
-            <img class="card__image" src="images/international-school-card.png" alt="Easy Days International School">
+            <picture><source srcset="images/international-school-card.webp" type="image/webp"><img loading="lazy" class="card__image" src="images/international-school-card.png" alt="International school Easy Days — Cambridge and Singapore programs"></picture>
             <div class="card__body">
               <span class="card__tag" data-en="Cambridge & Singapore" data-ru="Cambridge и Сингапур">Cambridge & Singapore</span>
               <h3 class="card__title" data-en="International School" data-ru="Интернациональная школа">International School</h3>
@@ -203,7 +207,7 @@
 
           <!-- Villas -->
           <div class="card">
-            <img class="card__image" src="images/villas-card.jpg" alt="ED Villas">
+            <picture><source srcset="images/villas-card.webp" type="image/webp"><img loading="lazy" class="card__image" src="images/villas-card.jpg" alt="ED Villas — luxury villas on Koh Samui"></picture>
             <div class="card__body">
               <span class="card__tag" data-en="3 & 5 Bedrooms" data-ru="3 и 5 спален">3 & 5 Bedrooms</span>
               <h3 class="card__title" data-en="ED Villas" data-ru="ED Villas">ED Villas</h3>
@@ -220,7 +224,7 @@
       <div class="container">
         <div class="split fade-in">
           <div class="split__image">
-            <img src="images/campus.jpg" alt="Easy Days Campus" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: var(--radius-md);">
+            <picture><source srcset="images/campus.webp" type="image/webp"><img loading="lazy" src="images/campus.jpg" alt="Easy Days Samui campus" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius: var(--radius-md);"></picture>
           </div>
           <div>
             <h2 class="section-title" data-en="Our Story" data-ru="Наша история">Our Story</h2>
@@ -410,6 +414,6 @@
     <img src="" alt="Gallery image">
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

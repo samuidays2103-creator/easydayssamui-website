@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,6 +86,13 @@
       .gallery-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Invest in International School — Easydays Samui">
+  <meta name="twitter:description" content="International school with unique education model and villa community on Koh Samui. 13+ years track record. Investment opportunity.">
+  <meta name="twitter:image" content="https://easydayssamui.com/images/school-concept.jpg">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Easy Days Samui", "item": "https://easydayssamui.com/"}, {"@type": "ListItem", "position": 2, "name": "Invest", "item": "https://easydayssamui.com/invest.html"}]}
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -93,7 +100,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="images/logo.png" alt="Easy Days Samui" width="40" height="52">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
       </a>
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="index.html" class="nav__link" data-en="Home" data-ru="Главная">Home</a>
@@ -119,7 +126,7 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero hero--short">
-    <div class="hero__bg"><img src="images/school-concept.jpg" alt="Easydays International School — new campus concept"></div>
+    <div class="hero__bg"><picture><source srcset="images/school-concept.webp" type="image/webp"><img loading="lazy" src="images/school-concept.jpg" alt="Easy Days school concept design"></picture></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <span class="hero__badge" data-en="Investment Opportunity" data-ru="Инвестиционная возможность">Investment Opportunity</span>
@@ -134,6 +141,7 @@
     </div>
   </section>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="index.html">Home</a> <span class="breadcrumb__sep">/</span> <span>Invest</span></div></nav>
   <main id="main">
 
     <!-- ========== KEY METRICS ========== -->
@@ -197,7 +205,7 @@
       <div class="container">
         <div class="split fade-in">
           <div class="split__image">
-            <img src="images/school-concept-left.jpg" alt="Easydays School — new campus" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;">
+            <picture><source srcset="images/school-concept-left.webp" type="image/webp"><img loading="lazy" src="images/school-concept-left.jpg" alt="Easy Days educational concept" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;"></picture>
           </div>
           <div>
             <h2 class="section-title" data-en="Easydays School — The Solution" data-ru="Easydays School — единое образовательное решение">Easydays School — The Solution</h2>
@@ -290,13 +298,13 @@
             </div>
           </div>
           <div class="split__image">
-            <img src="images/villas-aerial.jpg" alt="ED Villas aerial view" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;">
+            <picture><source srcset="images/villas-aerial.webp" type="image/webp"><img loading="lazy" src="images/villas-aerial.jpg" alt="ED Villas aerial view — villa complex Samui" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;"></picture>
           </div>
         </div>
         <div class="gallery-grid fade-in" style="margin-top: 2rem;">
-          <img src="images/villa-front.jpg" alt="Villa exterior render" class="lightbox-trigger">
-          <img src="images/masterplan.png" alt="Masterplan" class="lightbox-trigger">
-          <img src="images/villa-interior.jpg" alt="Villa interior" class="lightbox-trigger">
+          <picture><source srcset="images/villa-front.webp" type="image/webp"><img loading="lazy" src="images/villa-front.jpg" alt="ED Villa — villa front view Samui" class="lightbox-trigger"></picture>
+          <picture><source srcset="images/masterplan.webp" type="image/webp"><img loading="lazy" src="images/masterplan.png" alt="ED Villas masterplan layout" class="lightbox-trigger"></picture>
+          <picture><source srcset="images/villa-interior.webp" type="image/webp"><img loading="lazy" src="images/villa-interior.jpg" alt="ED Villa interior design Samui" class="lightbox-trigger"></picture>
         </div>
       </div>
     </section>
@@ -512,6 +520,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
     <img src="" alt="Gallery image">
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

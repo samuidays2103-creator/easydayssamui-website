@@ -1240,3 +1240,23 @@ h1, h2, h3, h4, h5 {
 .skip-link:focus {
   top: 0;
 }
+
+/* --- Breadcrumbs --- */
+.breadcrumb {
+  padding: 12px 0;
+  font-size: 0.813rem;
+  color: var(--color-text-light);
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.breadcrumb a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+.breadcrumb a:hover {
+  color: var(--color-primary-dark);
+}
+.breadcrumb__sep {
+  margin: 0 6px;
+  opacity: 0.4;
+}

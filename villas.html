@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,6 +54,13 @@
     }
   }
   </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luxury Villas on Koh Samui — ED Villas by Easy Days">
+  <meta name="twitter:description" content="Luxury 3 & 5 bedroom villas in a gated community. 700 m to Maenam beach, 50 m to international school. Legal leasehold.">
+  <meta name="twitter:image" content="https://easydayssamui.com/images/villa-5bed.jpg">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Easy Days Samui", "item": "https://easydayssamui.com/"}, {"@type": "ListItem", "position": 2, "name": "ED Villas", "item": "https://easydayssamui.com/villas.html"}]}
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -61,7 +68,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="images/logo.png" alt="Easy Days Samui" width="40" height="52">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
       </a>
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="index.html" class="nav__link" data-en="Home" data-ru="Главная">Home</a>
@@ -86,7 +93,7 @@
   </header>
 
   <section class="hero hero--short">
-    <div class="hero__bg"><img src="images/villa-5bed.jpg" alt="ED Villas Samui"></div>
+    <div class="hero__bg"><picture><source srcset="images/villa-5bed.webp" type="image/webp"><img loading="lazy" src="images/villa-5bed.jpg" alt="5-bedroom villa ED Villas Samui"></picture></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <span class="hero__badge" data-en="ED Villas on Samui" data-ru="Посёлок вилл ED на Самуи">ED Villas on Samui</span>
@@ -103,6 +110,7 @@
     </div>
   </section>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="index.html">Home</a> <span class="breadcrumb__sep">/</span> <span>ED Villas</span></div></nav>
   <main id="main">
 
     <!-- Community Features -->
@@ -171,7 +179,7 @@
 
           <!-- 3 Bedroom Villa -->
           <div class="villa-card fade-in">
-            <img class="villa-card__image" src="images/villa-3bed.jpg" alt="3-Bedroom Villa">
+            <picture><source srcset="images/villa-3bed.webp" type="image/webp"><img loading="lazy" class="villa-card__image" src="images/villa-3bed.jpg" alt="3-bedroom villa ED Villas Samui"></picture>
             <div class="villa-card__body">
               <h3 class="villa-card__title" data-en="3-Bedroom Villa" data-ru="Вилла с 3 спальнями">3-Bedroom Villa</h3>
               <div class="villa-card__specs">
@@ -197,7 +205,7 @@
 
           <!-- 5 Bedroom Villa -->
           <div class="villa-card fade-in">
-            <img class="villa-card__image" src="images/villa-5bed.jpg" alt="5-Bedroom Villa">
+            <picture><source srcset="images/villa-5bed.webp" type="image/webp"><img loading="lazy" class="villa-card__image" src="images/villa-5bed.jpg" alt="5-bedroom villa ED Villas Samui"></picture>
             <div class="villa-card__body">
               <h3 class="villa-card__title" data-en="5-Bedroom Villa" data-ru="Вилла с 5 спальнями">5-Bedroom Villa</h3>
               <div class="villa-card__specs">
@@ -237,22 +245,22 @@
         </div>
         <div class="gallery fade-in">
           <div class="gallery__item">
-            <img src="images/gallery-kitchen.jpg" alt="Kitchen & Living">
+            <picture><source srcset="images/gallery-kitchen.webp" type="image/webp"><img loading="lazy" src="images/gallery-kitchen.jpg" alt="ED Villa kitchen interior"></picture>
           </div>
           <div class="gallery__item">
-            <img src="images/gallery-bedroom.jpg" alt="Master Bedroom">
+            <picture><source srcset="images/gallery-bedroom.webp" type="image/webp"><img loading="lazy" src="images/gallery-bedroom.jpg" alt="ED Villa master bedroom"></picture>
           </div>
           <div class="gallery__item">
-            <img src="images/gallery-bathroom.jpg" alt="Master Bathroom">
+            <picture><source srcset="images/gallery-bathroom.webp" type="image/webp"><img loading="lazy" src="images/gallery-bathroom.jpg" alt="ED Villa bathroom"></picture>
           </div>
           <div class="gallery__item">
-            <img src="images/gallery-children.jpg" alt="Children's Room">
+            <picture><source srcset="images/gallery-children.webp" type="image/webp"><img loading="lazy" src="images/gallery-children.jpg" alt="ED Villa children room"></picture>
           </div>
           <div class="gallery__item">
-            <img src="images/gallery-office.jpg" alt="Home Office">
+            <picture><source srcset="images/gallery-office.webp" type="image/webp"><img loading="lazy" src="images/gallery-office.jpg" alt="ED Villa home office"></picture>
           </div>
           <div class="gallery__item">
-            <img src="images/gallery-bedroom3.jpg" alt="Bedroom 3rd Floor">
+            <picture><source srcset="images/gallery-bedroom3.webp" type="image/webp"><img loading="lazy" src="images/gallery-bedroom3.jpg" alt="ED Villa guest bedroom"></picture>
           </div>
         </div>
       </div>
@@ -322,6 +330,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
     <img src="" alt="Gallery image">
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,6 +61,13 @@
     "hasMap": "https://maps.app.goo.gl/sgLM5Af1nsCKZ47h6"
   }
   </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="International Kindergarten on Koh Samui — Easy Days Samui">
+  <meta name="twitter:description" content="Ages 1.5–7. Bilingual programs, swimming, gymnastics, art, chess. 7 groups, 20+ activities on Koh Samui.">
+  <meta name="twitter:image" content="https://easydayssamui.com/images/hero-kindergarten.jpg">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Easy Days Samui", "item": "https://easydayssamui.com/"}, {"@type": "ListItem", "position": 2, "name": "Kindergarten", "item": "https://easydayssamui.com/kindergarten.html"}]}
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -68,7 +75,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="images/logo.png" alt="Easy Days Samui" width="40" height="52">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.png" alt="Easy Days Samui" width="40" height="52"></picture>
       </a>
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="index.html" class="nav__link" data-en="Home" data-ru="Главная">Home</a>
@@ -93,7 +100,7 @@
   </header>
 
   <section class="hero hero--short">
-    <div class="hero__bg"><img src="images/hero-kindergarten.jpg" alt="Easy Days International Kindergarten on Koh Samui"></div>
+    <div class="hero__bg"><picture><source srcset="images/hero-kindergarten.webp" type="image/webp"><img loading="lazy" src="images/hero-kindergarten.jpg" alt="Easy Days kindergarten children on Koh Samui"></picture></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <span class="hero__badge" data-en="Ages 1.5 to 7" data-ru="Возраст 1.5–7 лет">Ages 1.5 to 7</span>
@@ -107,6 +114,7 @@
     </div>
   </section>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="index.html">Home</a> <span class="breadcrumb__sep">/</span> <span>Kindergarten</span></div></nav>
   <main id="main">
     <section class="section">
       <div class="container">
@@ -257,7 +265,7 @@
             </a>
           </div>
           <div class="split__image">
-            <img src="images/kindergarten-children.jpg" alt="Happy Children at Easy Days" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;">
+            <picture><source srcset="images/kindergarten-children.webp" type="image/webp"><img loading="lazy" src="images/kindergarten-children.jpg" alt="Children at Easy Days kindergarten Samui" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;"></picture>
           </div>
         </div>
       </div>
@@ -321,6 +329,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
     <img src="" alt="Gallery image">
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
